@@ -1,0 +1,17 @@
+class Solution
+{
+    
+  public void printNos(int N)
+    {
+        print(N,1);
+    }
+    
+    public void print(int N, int start)
+    {
+        if(start>N){
+            return;
+        }
+        print(N,start+1);
+        System.out.print(start+" ");
+    }
+}
