@@ -1,0 +1,18 @@
+class Solution {
+    int print2largest(int arr[], int n) {
+        // code here
+        int fl=arr[0];
+        int sl=-1;
+
+        
+        for(int i=1;i<n;i++){
+            if(arr[i]>fl){
+                sl=fl;
+                fl=arr[i];
+            }else if(arr[i]<fl &&arr[i]>sl){
+                sl=arr[i];
+            }
+        }
+        return sl;
+    }
+}
